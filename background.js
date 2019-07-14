@@ -1,20 +1,13 @@
-function update() {
-  var date = new Date();
-  var hours = date.getHours();
-  var minutes=  date.getMinutes();
-
-  var canvas = document.createElement("canvas");
-  var context = canvas.getContext("2d");
-  context.fillStyle = "white";
-  context.font = "80px monospace";
-  context.fillText(hours + (minutes<10? "0": "") + minutes, 0, 0);
-
-  var imageData = context.getImageData(0, 0, 128, 128);
-
-  browser.browserAction.setIcon({imageData: imageData});
-  browser.browserAction.setTitle({title: date.toString()});
-
-  setTimeout(update, (60-date.getSeconds())*1000);
+function update()
+{
+	var date = new Date();
+	var min=  date.getMinutes();
+	browser.browserAction.setTitle
+	({
+		title: date.getHours() + (min<10? "0": "") + min
+	});
+	setTimeout(update, (60-date.getSeconds())*1000);
 }
 
 update();
+
