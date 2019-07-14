@@ -1,15 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "small-clock",
-  "version": "0.0.6",
-  "description": "A simple and small text based clock which sits in your toolbar. Ideal for fullscreen browser use",
+  "name": "Clock",
+  "version": "1.0",
+  "description": "Clean and Simple",
   "background": {
     "scripts": ["background.js"]
   },
   "browser_action": {
-    "default_title": "Small Clock"
+    "default_title": "Clock"
   },
-  "permissions": ["storage"],
   "applications": {
       "gecko": {
           "id": "@small-clock"
