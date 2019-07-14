@@ -3,6 +3,8 @@
 	"name": "Clock",
 	"version": "1.0",
 	"description": "Clean and Simple",
+	"author": "Jovan Lanik",
+	"homepage_url": "https://github.com/JovanLanik",
 	"background":
 	{
 		"scripts": ["background.js"]
