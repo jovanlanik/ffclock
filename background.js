@@ -7,8 +7,7 @@ function update() {
   var context = canvas.getContext("2d");
   context.fillStyle = "white";
   context.font = "80px monospace";
-  context.fillText(hours, 1, 58);
-  context.fillText((minutes<10? "0": "") + minutes);
+  context.fillText(hours + (minutes<10? "0": "") + minutes, 0, 0);
 
   var imageData = context.getImageData(0, 0, 128, 128);
 
