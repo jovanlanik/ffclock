@@ -1,5 +1,5 @@
 # ffclock
-A simple clock to put somewhere in the ff toolbar. Meant to be used css like this:
+A simple clock to put somewhere in the ff toolbar. Meant to be used css with like this:
 ```
 /* Clock extension */
 #clean_simple_clock-browser-action {
